@@ -1,6 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+
+*{
+    /* removing default margin and padding */
+    margin: 0%;
+    padding: 0%;
+    /* The CSS box-sizing property allows us to include the padding and border in an element's total width and height */
+    box-sizing: border-box; 
+}
 body {
     line-height: 1.7;
     color: gray;
@@ -8,7 +16,21 @@ body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+  line-height: 27px;
   
+}
+h1{
+   color: #000000;
+  font-family: 'Montserrat 900', sans-serif;
+  line-height: 48px;
+}
+h2{
+    color: #000000;
+}
+.btn {
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
 }
 
 .container {
@@ -17,7 +39,7 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    background-color: aqua;
+  
 }
 .row{
     display: flex;
@@ -35,20 +57,52 @@ body {
 /* second section */
 
 .second_section{
-    margin-top: 3%;
+    margin-top: 0%;
+ 
+
+    
 }
 .iframe-container{
-  background-color: chocolate;
+
 padding: 7%;
 }
+@media (max-width:974px){
+    .iframe-container{
+        width: 100%;
+        height:340px;
+     padding: 0;
+     
+       
+       
+    }
+    .iframe-container iframe{
+      width: 100%;
+      height: 100%;
+    }
+    .apply{
+        text-align: center;
+    }
+}
+
+
 
 .iframe-container iframe{
 width: 100%;
 height: 100%;
- 
+
 }
 .apply{
-    background-color: chartreuse;
+
     text-align: left;
 padding: 3%;
+margin-top: 5%;
+}
+
+.apply_button{
+   
+    background: #00d2b5;
+    border-radius: 20px;
+    padding: 10px 26px;
+   border: none;
+   color: white;
 }
