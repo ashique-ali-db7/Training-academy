@@ -144,10 +144,12 @@ background-color: #f6f6f6;
 .card{
     width: 22rem;
     height: 16rem;
+    transition: all 300ms ease-in-out;
   
 }
 .card:hover{
     background-color: #00d2b5;
+    transform: translateY(-10px);
     
 }
 .card:hover .features-icon i{
@@ -324,4 +326,41 @@ font-weight: normal;
 .black-text{
     color: black !important;
 font-size: 1.5rem;
+}
+
+/* domain */
+#domain{
+  background-color: rgb(241, 241, 241);
+}
+.text-center {
+  text-align: center!important;
+}
+.text-left {
+  text-align: left!important;
+}
+
+.section-title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 900;
+}
+.text_in_domain{
+ 
+  text-align: left;
+
+}
+.text_in_domain h6{
+  color: #000;
+}
+
+.domain_text_container{
+ background-color: #fff;
+  padding: 24px;
+  margin-bottom: 1rem;
+  transition: all 300ms ease-in-out;
+  width: 45%;
+}
+.domain_text_container:hover{
+  transform: translateY(-10px);
+  background-color: #00d2b5;
 }
