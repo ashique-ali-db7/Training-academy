@@ -7,15 +7,17 @@
         Place:{
             required:true
         },
-        Gender:{
-            required:true
+        age:{
+            required:true,
+            number:true
         },
         Email:{
             required:true
         },
         Contact_no:{
             required:true,
-            number:true
+            number:true,
+            minlength:10
         },
         employment_status:{
             required:true
