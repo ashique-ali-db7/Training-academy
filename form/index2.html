@@ -1,140 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
- <!-- google font -->
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 
     <!-- css -->
-<link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles2.css">
+  
+    <style>
+        .error {
 
+            color: red;
+            font-style: italic;
+        }
+    </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
 
-    <div class="heading_part"><h1>SPS<span style="color: aqua;">.</span></h1></div>
+    <div class="heading_part">
+        <h1>SPS<span style="color: aqua;">.</span></h1>
+    </div>
 
     <div class="registration_container">
         <h2>REGISTRATION</h2>
 
-        <form action="">
+        <form  action="" id="registration_form">
             <input type="text" name="Full_name" placeholder="Full Name">
             <hr>
 
-<div class="row">
-<div class="col-md-6">
-    <div class="text_container">
-        <input type="text" name="Place" placeholder="Place">
-        <hr>
-    </div>
-</div>
-<div class="col-md-6">
-    <div class="text_container">
-        <input type="text" name="Gender" placeholder="Gender">
-        <hr>
-    </div>
-</div>
-</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text_container">
+                        <input type="text" name="Place" placeholder="Place">
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text_container">
+                        <input type="text" name="Gender" placeholder="Gender">
+                        <hr>
+                    </div>
+                </div>
+            </div>
 
-<input type="text" name="Email" placeholder="Email">
-<hr>
-
-
-<div class="row">
-    <div class="col-md-6">
-        <div class="text_container">
-            <input type="text" name="Contact_no" placeholder="Conatct No">
+            <input type="email" name="Email" placeholder="Email">
             <hr>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="text_container">
-           <select name="employment_status" id="employment_status" >
-            <option value="Employmentst">Employment Status</option>
-               <option value="Employed">Employed</option>
-               <option value="Fresher">Fresher</option>
-               <option value="Student">Student</option>
 
-           </select>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text_container">
+                        <input type="text" name="Contact_no" placeholder="Conatct No">
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="text_container employment_container">
+                        <select name="employment_status" id="employment_status">
+                            <option value="">Employment Status</option>
+                            <option value="Employed">Employed</option>
+                            <option value="Fresher">Fresher</option>
+                            <option value="Student">Student</option>
+
+                        </select>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <select name="education" id="education">
+                <option value="">Educational Qualification</option>
+                <option value="Btech">Btech</option>
+                <option value="Mtech">Mtech</option>
+                <option value="BCA/MCA">BCA/MCA</option>
+                <option value="Bsc/Msc">Bsc/Msc</option>
+                <option value="Other">Other</option>
+
+            </select>
             <hr>
-        </div>
-    </div>
-    </div>
 
-    <select name="education" id="education" >
-        <option value="Educational_Qualification">Educational Qualification</option>
-        <option value="Btech">Btech</option>
-        <option value="Mtech">Mtech</option>
-        <option value="BCA/MCA">BCA/MCA</option>
-        <option value="Bsc/Msc">Bsc/Msc</option>
-        <option value="Other">Other</option>
-
-    </select>
-     <hr>
-
-     <input type="text" name="organisation" placeholder="Name of college/organisation">
-<hr>
-
-     
-<div class="row">
-    <div class="col-lg-6">
-        <div class="text_container">
-            <input class="valid" type="number" placeholder="Year of Graduation" name="graduation" id="graduation-year" aria-invalid="false">
+            <input type="text" name="organisation" placeholder="Name of college/organisation">
             <hr>
-        </div>
-    </div>
-   
-    </div>
 
-<textarea name="tell_us" id="tell_us" cols="30" rows="1" placeholder="Tell us more about you"></textarea>
-<hr>
 
-<textarea name="join_sps" id="join_sps" cols="30" rows="1" placeholder="Why do you want to join sps?"></textarea>
-<hr>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text_container">
+                        <input class="valid" type="number" placeholder="Year of Graduation" name="graduation"
+                            id="graduation-year" aria-invalid="false">
+                        <hr>
+                    </div>
+                </div>
 
-<textarea name="motivates" id="motivates" cols="30" rows="1" placeholder="What motivate you to work hard every day?"></textarea>
-<hr>
+            </div>
 
-<select name="know_sps" id="know_sps" >
-    <option value="know">From where did you learn about sps?</option>
-    <option value="crossroads_youtube">Crossroads Youtube Channel</option>
-    <option value="youtube">Youtube</option>
-    <option value="freinds">Freinds</option>
-    <option value="facebook">Facebook</option>
-    <option value="whatsappgroup">Whatsapp Group</option>
+            <textarea name="tell_us" id="tell_us" cols="30" rows="1" placeholder="Tell us more about you"></textarea>
+            <hr>
 
-</select>
- <hr>
- 
- <span><input class="input--style-2" type="checkbox" name="agree" id="agree">I agree that I have read and understood all the <a href="../index.html#faq">FAQs</a></span>
-<hr>
+            <textarea name="join_sps" id="join_sps" cols="30" rows="1"
+                placeholder="Why do you want to join sps?"></textarea>
+            <hr>
 
-<div class="d-grid gap-2">
-    <button class="btn btn-primary btn1" type="submit">Register</button>
+            <textarea name="motivates" id="motivates" cols="30" rows="1"
+                placeholder="What motivate you to work hard every day?"></textarea>
+            <hr>
 
-  </div>
+            <select name="know_sps" id="know_sps">
+                <option value="">From where did you learn about sps?</option>
+                <option value="crossroads_youtube">Crossroads Youtube Channel</option>
+                <option value="youtube">Youtube</option>
+                <option value="freinds">Freinds</option>
+                <option value="facebook">Facebook</option>
+                <option value="whatsappgroup">Whatsapp Group</option>
+
+            </select>
+            <hr>
+
+            <span><input class="input--style-2" type="checkbox" name="agree" id="agree">I agree that I have read and
+                understood all the <a href="../index.html#faq">FAQs</a></span>
+            <hr>
+
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary btn1" value="submit" type="submit">Register</button>
+
+            </div>
 
         </form>
 
     </div>
 
     <div class="footer">
-       <p>Copyright ©Packapeer Academy Pvt Ltd 2021</p>
+        <p>Copyright ©Packapeer Academy Pvt Ltd 2021</p>
     </div>
-    
+
+
+
+
+    <!-- jquery google cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 
     <!-- bootstrap 5 -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-  integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-  integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+
+    <!-- index.js -->
+    <script type="text/javascript" src="index2.js"></script>
 
 </body>
+
 </html>
