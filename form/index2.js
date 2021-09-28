@@ -59,7 +59,7 @@
     },
     submitHandler:function(form){
         $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbwuhGr6pmr2tepBQcl_WVH1S5lk0xbOCT5cUqbRFp-56fIZUMgDJkHh8HYmEbNxzivwsA/exec",
+            url:"https://script.google.com/macros/s/AKfycbw1YAvn-K4C3UAGXVvvu6I7yydbtgFoGH-NEgNEpdOC6nXVH7P_QF3xHplr_ATtlK90/exec",
             data:$("#registration_form").serialize(),
             method:"post",
             success:function (response){

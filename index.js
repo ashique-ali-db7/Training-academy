@@ -42,3 +42,9 @@ function toggleVideo4(){
     video4.setAttribute("src","https://www.youtube.com/embed/ckub1RSlhic?autoplay=1");
 }
 
+document.addEventListener("scroll",show);
+function show(){
+    document.querySelector(".hidebut").classList.remove("scroll-to-top");
+    document.querySelector(".hidebut").classList.add("scroll-to-top2");
+   
+}
