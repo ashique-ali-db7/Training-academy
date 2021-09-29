@@ -42,9 +42,15 @@ function toggleVideo4(){
     video4.setAttribute("src","https://www.youtube.com/embed/ckub1RSlhic?autoplay=1");
 }
 
-document.addEventListener("scroll",show);
+window.addEventListener("scroll",show);
 function show(){
-    document.querySelector(".hidebut").classList.remove("scroll-to-top");
-    document.querySelector(".hidebut").classList.add("scroll-to-top2");
+    if(window.scrollY <=100){
+        document.querySelector(".hidebut").classList.add("hidden");
+    }
+    else{
+        document.querySelector(".hidebut").classList.remove("hidden");
+    }
+  
+   
    
 }

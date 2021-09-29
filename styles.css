@@ -757,34 +757,13 @@ form.chat .in {
     border-radius: 4px;
     width: auto;
     height: auto;
-    display: none;
 }
 .scroll-to-top:hover{
   background-color: #068b89;
   color: #fff;
   }
 
-.scroll-to-top2 {
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
- 
- 
-  border: none;
-  outline: none;
-  background-color: #22d1b5;
-  color: white;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 4px;
-  width: auto;
-  height: auto;
-  display: block;
-}
-.scroll-to-top2:hover{
-  background-color: #068b89;
-  color: #fff;
-  }
+
 
 
 
